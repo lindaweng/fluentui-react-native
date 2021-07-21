@@ -17,8 +17,14 @@ import { HOMEPAGE_SVG_BUTTON, SvgTest } from './TestComponents/Svg';
 import { HOMEPAGE_TEXT_BUTTON, TextTest } from './TestComponents/Text';
 import { HOMEPAGE_THEME_BUTTON, ThemeTest } from './TestComponents/Theme';
 import { ActivityIndicatorTest, HOMEPAGE_ACTIVITYINDICATOR_BUTTON } from './TestComponents/ActivityIndicator';
+import { SvgDemoTest, HOMEPAGE_SVGDEMO_BUTTON } from './TestComponents/ASvgDemo';
 
 export const tests: TestDescription[] = [
+  {
+    name: 'Animated Svg Demo Test',
+    component: SvgDemoTest,
+    testPage: HOMEPAGE_SVGDEMO_BUTTON,
+  },
   {
     name: 'ActivityIndicator Test',
     component: ActivityIndicatorTest,
