@@ -18,8 +18,14 @@ import { HOMEPAGE_TEXT_BUTTON, TextTest } from './TestComponents/Text';
 import { HOMEPAGE_THEME_BUTTON, ThemeTest } from './TestComponents/Theme';
 import { ActivityIndicatorTest, HOMEPAGE_ACTIVITYINDICATOR_BUTTON } from './TestComponents/ActivityIndicator';
 import { HOMEPAGE_TOKEN_BUTTON, TokenTest } from './TestComponents/Tokens';
+import { CelebrationTest, HOMEPAGE_CELEBRATION_BUTTON } from './TestComponents/ACelebration';
 
 export const tests: TestDescription[] = [
+  {
+    name: 'Celebration Test',
+    component: CelebrationTest,
+    testPage: HOMEPAGE_CELEBRATION_BUTTON,
+  },
   {
     name: 'ActivityIndicator Test',
     component: ActivityIndicatorTest,
