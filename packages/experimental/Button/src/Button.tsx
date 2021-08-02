@@ -29,7 +29,7 @@ export const Button = compose<ButtonType>({
 
       return (
         <Slots.root {...mergedProps}>
-          {icon && <Slots.icon key="icon" source={{ uri: icon }} />}
+          {icon && <Slots.icon />}
           {content && <Slots.content key="content">{content}</Slots.content>}
           {children}
         </Slots.root>

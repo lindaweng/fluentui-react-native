@@ -2,7 +2,7 @@ import { Theme } from '@fluentui-react-native/framework';
 import { TokenSettings } from '@fluentui-react-native/use-styling';
 import { ButtonTokens } from '.';
 
-export const buttonStates: (keyof ButtonTokens)[] = ['fluid', 'primary', 'ghost', 'hovered', 'focused', 'pressed', 'disabled'];
+export const buttonStates: (keyof ButtonTokens)[] = ['fab', 'fluid', 'primary', 'ghost', 'hovered', 'focused', 'pressed', 'disabled'];
 
 export const defaultButtonTokens: TokenSettings<ButtonTokens, Theme> = (t: Theme) =>
   ({
@@ -16,6 +16,16 @@ export const defaultButtonTokens: TokenSettings<ButtonTokens, Theme> = (t: Theme
     borderRadius: 2,
     fluid: {
       width: '100%',
+    },
+    fab: {
+      borderRadius: 500, // number big enough that it will always be at least half of the width/height
+      shadowOffset: {
+        width: 4,
+        height: 8,
+      },
+      shadowColor: 'red',
+      elevation: 30,
+      shadowOpacity: 1,
     },
     disabled: {
       backgroundColor: t.colors.buttonDisabledBackground,
