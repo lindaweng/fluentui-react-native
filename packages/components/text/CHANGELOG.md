@@ -1,8 +1,87 @@
 # Change Log - @fluentui-react-native/text
 
-This log was last generated on Wed, 21 Jul 2021 22:55:40 GMT and should not be manually modified.
+This log was last generated on Mon, 09 Aug 2021 22:49:01 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.10.5
+
+Mon, 09 Aug 2021 22:49:01 GMT
+
+### Patches
+
+- Bump @uifabricshared/foundation-compose to v1.10.5 (ruaraki@microsoft.com)
+
+## 0.10.4
+
+Mon, 09 Aug 2021 19:16:08 GMT
+
+### Patches
+
+- Bump @uifabricshared/foundation-compose to v1.10.4 (ruaraki@microsoft.com)
+
+## 0.10.3
+
+Sat, 07 Aug 2021 00:40:04 GMT
+
+### Patches
+
+- enable usePressableState with stock Pressable component (jasonmo@microsoft.com)
+
+## 0.10.2
+
+Fri, 06 Aug 2021 23:18:21 GMT
+
+### Patches
+
+- Bump @uifabricshared/foundation-compose to v1.10.2 (ruaraki@microsoft.com)
+
+## 0.10.1
+
+Fri, 06 Aug 2021 00:36:02 GMT
+
+### Patches
+
+- Bump @uifabricshared/foundation-compose to v1.10.1 (ruaraki@microsoft.com)
+
+## 0.10.0
+
+Wed, 04 Aug 2021 06:26:25 GMT
+
+### Minor changes
+
+- radio group on macOS (67026167+chiuam@users.noreply.github.com)
+
+### Patches
+
+- Bump @fluentui-react-native/adapters to v0.6.8 (67026167+chiuam@users.noreply.github.com)
+- Bump @uifabricshared/foundation-compose to v1.10.0 (67026167+chiuam@users.noreply.github.com)
+- Bump @fluentui-react-native/test-tools to v0.1.1 (67026167+chiuam@users.noreply.github.com)
+- Bump @fluentui-react-native/tokens to v0.9.13 (67026167+chiuam@users.noreply.github.com)
+
+## 0.9.16
+
+Tue, 27 Jul 2021 22:17:20 GMT
+
+### Patches
+
+- add compressible utility and a snapshot test / demo to framework (jasonmo@microsoft.com)
+
+## 0.9.15
+
+Mon, 26 Jul 2021 20:41:04 GMT
+
+### Patches
+
+- add new use-slot package, move framework to consume that package (jasonmo@microsoft.com)
+
+## 0.9.14
+
+Sun, 25 Jul 2021 16:30:17 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/adapters to v0.6.5 (email not defined)
 
 ## 0.9.10
 
