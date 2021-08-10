@@ -37,6 +37,7 @@
     "@fluentui-react-native/experimental-native-date-picker": ">=0.2.2 <1.0.0",
     "@fluentui-react-native/experimental-shimmer": "0.3.13",
     "@fluentui-react-native/experimental-text": ">=0.5.12 <1.0.0",
+    "@fluentui-react-native/floating-action-button": ">=0.1.0 <1.0.0",
     "@fluentui-react-native/framework": ">=0.5.14 <1.0.0",
     "@fluentui-react-native/icon": "0.7.13",
     "@fluentui-react-native/interactive-hooks": ">=0.10.16 <1.0.0",

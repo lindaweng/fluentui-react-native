@@ -39,6 +39,7 @@ export interface IButtonState {
 }
 
 type IconSourcesType = number | string | IconProps;
+type ButtonSize = 'small' | 'medium' | 'large';
 
 export interface IButtonTokens extends FontTokens, IForegroundColorTokens, IBackgroundColorTokens, IBorderTokens {
   /**
@@ -53,6 +54,7 @@ export interface IButtonTokens extends FontTokens, IForegroundColorTokens, IBack
 
   /**
    * The icon color.
+   * NOTE: This does not work. This changes the style prop color within icon, but icon uses just a color prop NOT within style
    */
   iconColor?: ColorValue;
 
@@ -85,9 +87,21 @@ export interface IButtonTokens extends FontTokens, IForegroundColorTokens, IBack
    * Source URL or name of the icon to show on the Button.
    */
   icon?: IconSourcesType;
+
+  /**
+   * Button size
+   * @default 'large'
+   */
+  size?: ButtonSize;
 }
 
 export interface IButtonProps extends Omit<IPressableProps, 'onPress'> {
+  /**
+   * Button size
+   * @default 'large'
+   */
+  size?: ButtonSize;
+
   /**
    * Text to show on the Button.
    */

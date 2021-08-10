@@ -21,7 +21,7 @@ export const stylingSettings: UseStylingOptions<ButtonProps, ButtonSlotProps, Bu
           backgroundColor: tokens.backgroundColor,
           ...borderStyles.from(tokens, theme),
           ...layoutStyles.from(tokens, theme),
-          // shadowOffset: { width: 4, height: 8 },
+          // shadowOffset: { width: 4, height: 8 }, // shadow works here, applies to all buttons
           // shadowColor: 'green',
           // shadowRadius: 10,
           // shadowOpacity: 1,

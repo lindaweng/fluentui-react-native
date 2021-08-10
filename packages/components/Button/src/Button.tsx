@@ -17,6 +17,8 @@ import {
   useOnPressWithFocus,
 } from '@fluentui-react-native/interactive-hooks';
 import { Icon } from '@fluentui-react-native/icon';
+import { buildContentStyles } from './Button.tokens.content';
+import { buildStackStyles } from './Button.tokens.stack';
 
 export const Button = compose<IButtonType>({
   displayName: buttonName,
@@ -70,10 +72,20 @@ export const Button = compose<IButtonType>({
   settings,
   render: (Slots: ISlots<IButtonSlotProps>, renderData: IButtonRenderData, ...children: React.ReactNode[]) => {
     const info = renderData.state!.info;
+
+    // not sure if this is the best way, but this works
+    // Add margin between icon and content if both exist
+    const marginBetween = {
+      marginEnd: 0,
+    };
+    if (info.icon && info.content) {
+      marginBetween.marginEnd = 10;
+    }
+
     return (
       <Slots.root>
         <Slots.stack>
-          {info.icon && <Slots.icon />}
+          {info.icon && <Slots.icon style={marginBetween} />}
           {info.content && <Slots.content />}
           {children}
         </Slots.stack>
@@ -88,9 +100,9 @@ export const Button = compose<IButtonType>({
   },
   styles: {
     root: [backgroundColorTokens, borderTokens],
-    stack: [],
+    stack: [buildStackStyles],
     icon: [{ source: 'iconColor', lookup: getPaletteFromTheme, target: 'color' }],
-    content: [textTokens, foregroundColorTokens],
+    content: [textTokens, foregroundColorTokens, buildContentStyles],
   },
 });
 

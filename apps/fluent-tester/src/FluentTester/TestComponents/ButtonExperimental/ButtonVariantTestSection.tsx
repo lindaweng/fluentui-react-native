@@ -2,10 +2,12 @@ import { Button, CompoundButton } from '@fluentui-react-native/experimental-butt
 import * as React from 'react';
 import { View } from 'react-native';
 import { commonTestStyles, stackStyle } from '../Common/styles';
+import { SvgIconProps } from '@fluentui-react-native/icon';
+import TestSvg from './test.svg';
 
 export const ButtonVariantTest: React.FunctionComponent<{}> = () => {
   const shadowStyles = {
-    // shadowOffset: {
+    // shadowOffset: {    // shadow shows up if applied here
     //   width: 4,
     //   height: 8,
     // },
@@ -13,7 +15,13 @@ export const ButtonVariantTest: React.FunctionComponent<{}> = () => {
     // elevation: 30,
     // shadowOpacity: 1,
   };
+  const svgProps: SvgIconProps = {
+    src: TestSvg,
+    viewBox: '0 0 500 500',
+  };
+
   const testImage = require('./icon_24x24.png');
+  console.log(testImage);
   return (
     <View style={[stackStyle, commonTestStyles.view]}>
       <Button content="Default" style={commonTestStyles.vmargin} />
@@ -22,6 +30,12 @@ export const ButtonVariantTest: React.FunctionComponent<{}> = () => {
       <Button fluid content="Fluid" style={commonTestStyles.vmargin} />
       <Button primary fluid content="Fluid Primary" style={commonTestStyles.vmargin} />
       <Button ghost fluid content="Fluid Ghost" style={commonTestStyles.vmargin} />
+      <Button
+        fab
+        icon={{ svgSource: svgProps, width: 20, height: 20, color: 'red' }}
+        content="FAB"
+        style={[commonTestStyles.vmargin, shadowStyles]}
+      />
       <Button fab icon={testImage} content="FAB" style={[commonTestStyles.vmargin, shadowStyles]} />
       <CompoundButton content="Default" secondaryContent="Compound" style={commonTestStyles.vmargin} />
       <CompoundButton primary content="Primary" secondaryContent="Compound" style={commonTestStyles.vmargin} />

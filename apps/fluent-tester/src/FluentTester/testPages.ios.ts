@@ -18,6 +18,7 @@ import { HOMEPAGE_TEXT_BUTTON, TextTest } from './TestComponents/Text';
 import { HOMEPAGE_THEME_BUTTON, ThemeTest } from './TestComponents/Theme';
 import { ActivityIndicatorTest, HOMEPAGE_ACTIVITYINDICATOR_BUTTON } from './TestComponents/ActivityIndicator';
 import { HOMEPAGE_TOKEN_BUTTON, TokenTest } from './TestComponents/Tokens';
+import { HOMEPAGE_FLOATINGACTIONBUTTON_BUTTON, FloatingActionButtonTest } from './TestComponents/FloatingActionButton';
 
 export const tests: TestDescription[] = [
   {
@@ -49,6 +50,11 @@ export const tests: TestDescription[] = [
     name: 'Experimental Button',
     component: ExperimentalButtonTest,
     testPage: HOMEPAGE_BUTTON_BUTTONEXPERIMENTAL,
+  },
+  {
+    name: 'FloatingActionButton Test',
+    component: FloatingActionButtonTest,
+    testPage: HOMEPAGE_FLOATINGACTIONBUTTON_BUTTON,
   },
   {
     name: 'Pressable Test',

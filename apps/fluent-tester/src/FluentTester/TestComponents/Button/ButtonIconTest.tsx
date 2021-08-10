@@ -8,8 +8,9 @@ import { SvgIconProps } from '@fluentui-react-native/icon';
 import TestSvg from './test.svg';
 
 const CustomizedIconButton = Button.customize({
-  tokens: { iconColor: 'red' },
+  tokens: { iconColor: 'red' }, // doesn't work
   content: { style: { marginStart: 5 } },
+  // icon: { color: 'green' }, // works
 });
 
 export const ButtonIconTest: React.FunctionComponent<{}> = () => {

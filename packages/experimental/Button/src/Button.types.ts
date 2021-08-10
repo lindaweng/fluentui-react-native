@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ViewProps, ImageProps, ViewStyle, ColorValue } from 'react-native';
+import { ViewProps, ViewStyle, ColorValue } from 'react-native';
 import { TextProps } from '@fluentui-react-native/experimental-text';
 import { FontTokens, IBorderTokens } from '@fluentui-react-native/tokens';
 import { IFocusable, IPressableHooks, IWithPressableOptions } from '@fluentui-react-native/interactive-hooks';
@@ -67,6 +67,14 @@ export interface ButtonTokens extends FontTokens, IBorderTokens {
   width?: ViewStyle['width'];
   minHeight?: ViewStyle['minHeight'];
   minWidth?: ViewStyle['minWidth'];
+
+  shadowColor?: ColorValue;
+  shadowOffset?: {
+    width: Number;
+    height: Number;
+  };
+  elevation?: Number;
+  shadowOpacity?: Number;
 
   /**
    * States that can be applied to a button

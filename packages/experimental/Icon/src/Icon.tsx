@@ -52,18 +52,16 @@ function renderFontIcon(iconProps: IconProps) {
 
 function renderSvg(iconProps: IconProps) {
   const svgIconProps: SvgIconProps = iconProps.svgSource;
-  const { width, height } = iconProps;
+  const { width, height, color } = iconProps;
   const viewBox = iconProps.svgSource.viewBox;
   const style = mergeStyles(iconProps.style, rasterImageStyleCache({ width: width, height: height }, [width, height])[0]);
 
   // react-native-svg is still on 0.61, and their color prop doesn't handle ColorValue
   // If a color for the icon is not supplied, fall back to white or black depending on appearance
   const theme = useTheme();
-  const iconColor = svgIconProps.color
-    ? svgIconProps.color
-    : getCurrentAppearance(theme.host.appearance, 'light') === 'dark'
-    ? '#FFFFFF'
-    : '#000000';
+  // color was being pulled from the wrong place
+  // this color works for fab/primary, does not work for default/subtle. Default/subtle should be theme.colors.buttonText
+  const iconColor = color ? (color as string) : getCurrentAppearance(theme.host.appearance, 'light') === 'dark' ? '#000000' : '#FFFFFF';
 
   if (svgIconProps.src) {
     return (
@@ -86,7 +84,10 @@ export const Icon = stagedComponent((props: IconProps) => {
   const theme = useTheme();
 
   return (rest: IconProps) => {
-    const color = props.color || theme.colors.buttonText;
+    // color is being set here
+    // only works for default button (outline) and stealth/ghost button
+    // primary and FAB needs theme.colors.primaryButtonText
+    const color = rest.color || theme.colors.buttonText;
 
     const baseProps: IconProps = {
       color: color,

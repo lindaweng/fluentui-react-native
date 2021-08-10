@@ -20,6 +20,7 @@ export const defaultButtonTokens: TokenSettings<ButtonTokens, Theme> = (t: Theme
     fab: {
       borderRadius: 500, // number big enough that it will always be at least half of the width/height
       shadowOffset: {
+        // shadow does not work here
         width: 4,
         height: 8,
       },

@@ -10,6 +10,7 @@ export const settings: IComposeSettings<IButtonType> = [
       borderColor: 'buttonBorder',
       borderWidth: 1,
       borderRadius: 2,
+      size: 'large',
     },
     root: {
       accessible: true,
@@ -17,7 +18,8 @@ export const settings: IComposeSettings<IButtonType> = [
       accessibilityRole: 'button',
       style: {
         display: 'flex',
-        alignItems: 'flex-start',
+        alignItems: 'center',
+        justifyContent: 'center',
         flexDirection: 'row',
         alignSelf: 'flex-start',
       },
@@ -26,19 +28,7 @@ export const settings: IComposeSettings<IButtonType> = [
       // accessible: false,
     },
     icon: {},
-    stack: {
-      style: {
-        display: 'flex',
-        paddingStart: 10,
-        paddingEnd: 10,
-        alignItems: 'center',
-        flexDirection: 'row',
-        alignSelf: 'flex-start',
-        minHeight: 32,
-        minWidth: 32,
-        justifyContent: 'center',
-      },
-    },
+    stack: {}, // moved to Button.tokens.stack.ts
     _precedence: ['hovered', 'focused', 'pressed', 'disabled'],
     _overrides: {
       disabled: {

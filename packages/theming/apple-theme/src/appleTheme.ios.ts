@@ -18,21 +18,21 @@ const appleComponents = {
         margin: 8, // Padding around the outside of the button
       },
     },
-    stack: {
-      style: {
-        paddingVertical: 10,
-        paddingHorizontal: 14,
-      },
-    },
+    // stack: {
+    //   style: {
+    //     paddingVertical: 10,
+    //     paddingHorizontal: 14,
+    //   },
+    // },
     icon: {
       style: {
-        marginEnd: 8,
+        // marginEnd: 8,
       },
     },
-    content: {
-      fontSize: 12,
-      height: 18,
-    },
+    // content: {
+    //   fontSize: 12,
+    //   height: 18,
+    // },
   },
 
   PrimaryButton: {
@@ -45,21 +45,21 @@ const appleComponents = {
         margin: 8, // Padding around the outside of the button
       },
     },
-    stack: {
-      style: {
-        paddingVertical: 16,
-        paddingHorizontal: 20,
-      },
-    },
+    // stack: {
+    //   style: {
+    //     paddingVertical: 16, // small fab should only have 14
+    //     paddingHorizontal: 20,
+    //   },
+    // },
     icon: {
       style: {
-        marginEnd: 10,
+        // marginEnd: 10,
       },
     },
-    content: {
-      fontSize: 15,
-      height: 20,
-    },
+    // content: {
+    //   fontSize: 15,
+    //   height: 20,
+    // },
   },
 
   StealthButton: {
