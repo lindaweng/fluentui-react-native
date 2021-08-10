@@ -23,12 +23,13 @@ import { buildStackStyles } from './Button.tokens.stack';
 export const Button = compose<IButtonType>({
   displayName: buttonName,
   usePrepareProps: (userProps: IButtonProps, useStyling: IUseComposeStyling<IButtonType>) => {
+    const defaultComponentRef = React.useRef(null);
     const {
       icon,
       content,
       onAccessibilityTap = userProps.onClick,
       accessibilityLabel = userProps.content,
-      componentRef = React.useRef(null),
+      componentRef = defaultComponentRef,
       testID,
       onClick,
       ...rest
@@ -95,7 +96,7 @@ export const Button = compose<IButtonType>({
   slots: {
     root: View,
     stack: { slotType: View, filter: filterViewProps },
-    icon: { slotType: Icon as React.ComponentType<object> },
+    icon: { slotType: Icon as React.ComponentType },
     content: Text,
   },
   styles: {

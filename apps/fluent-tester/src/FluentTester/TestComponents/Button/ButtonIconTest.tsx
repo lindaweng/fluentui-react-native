@@ -13,7 +13,7 @@ const CustomizedIconButton = Button.customize({
   // icon: { color: 'green' }, // works
 });
 
-export const ButtonIconTest: React.FunctionComponent<{}> = () => {
+export const ButtonIconTest: React.FunctionComponent = () => {
   const testImage = require('./icon_24x24.png');
 
   const svgProps: SvgIconProps = {

@@ -1,8 +1,112 @@
 # Change Log - @fluentui-react-native/interactive-hooks
 
-This log was last generated on Sun, 25 Jul 2021 16:30:17 GMT and should not be manually modified.
+This log was last generated on Mon, 09 Aug 2021 22:49:01 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.10.29
+
+Mon, 09 Aug 2021 22:49:01 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/icon to v0.8.6 (ruaraki@microsoft.com)
+
+## 0.10.28
+
+Mon, 09 Aug 2021 19:16:08 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/icon to v0.8.5 (ruaraki@microsoft.com)
+
+## 0.10.27
+
+Sat, 07 Aug 2021 00:40:04 GMT
+
+### Patches
+
+- enable usePressableState with stock Pressable component (jasonmo@microsoft.com)
+
+## 0.10.26
+
+Fri, 06 Aug 2021 23:18:21 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/icon to v0.8.3 (ruaraki@microsoft.com)
+
+## 0.10.25
+
+Fri, 06 Aug 2021 00:36:02 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/icon to v0.8.2 (ruaraki@microsoft.com)
+
+## 0.10.24
+
+Wed, 04 Aug 2021 16:54:20 GMT
+
+### Patches
+
+- move experimental Text to be written as compressible (jasonmo@microsoft.com)
+
+## 0.10.23
+
+Wed, 04 Aug 2021 06:26:25 GMT
+
+### Patches
+
+- radio group on macOS (67026167+chiuam@users.noreply.github.com)
+
+## 0.10.22
+
+Tue, 03 Aug 2021 23:48:50 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/icon to v0.7.19 (jasonmo@microsoft.com)
+
+## 0.10.21
+
+Tue, 03 Aug 2021 22:33:17 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/icon to v0.7.18 (jasonmo@microsoft.com)
+
+## 0.10.20
+
+Fri, 30 Jul 2021 19:17:43 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/icon to v0.7.17 (email not defined)
+
+## 0.10.19
+
+Thu, 29 Jul 2021 17:53:12 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/icon to v0.7.16 (jasonmo@microsoft.com)
+
+## 0.10.18
+
+Tue, 27 Jul 2021 22:17:20 GMT
+
+### Patches
+
+- add compressible utility and a snapshot test / demo to framework (jasonmo@microsoft.com)
+
+## 0.10.17
+
+Mon, 26 Jul 2021 20:41:04 GMT
+
+### Patches
+
+- add new use-slot package, move framework to consume that package (jasonmo@microsoft.com)
 
 ## 0.10.16
 

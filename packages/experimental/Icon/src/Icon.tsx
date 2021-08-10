@@ -2,9 +2,8 @@ import * as React from 'react';
 import { IconProps, SvgIconProps, FontIconProps } from './Icon.types';
 import { Image, ImageStyle, Platform, View } from 'react-native';
 import { Text } from '@fluentui-react-native/text';
-import { mergeStyles } from '@fluentui-react-native/framework';
+import { mergeStyles, useFluentTheme } from '@fluentui-react-native/framework';
 import { stagedComponent, mergeProps, getMemoCache } from '@fluentui-react-native/framework';
-import { useTheme } from '@fluentui-react-native/theme-types';
 import { getCurrentAppearance } from '@fluentui-react-native/theming-utils';
 import { SvgUri } from 'react-native-svg';
 
@@ -58,7 +57,7 @@ function renderSvg(iconProps: IconProps) {
 
   // react-native-svg is still on 0.61, and their color prop doesn't handle ColorValue
   // If a color for the icon is not supplied, fall back to white or black depending on appearance
-  const theme = useTheme();
+  const theme = useFluentTheme();
   // color was being pulled from the wrong place
   // this color works for fab/primary, does not work for default/subtle. Default/subtle should be theme.colors.buttonText
   const iconColor = color ? (color as string) : getCurrentAppearance(theme.host.appearance, 'light') === 'dark' ? '#000000' : '#FFFFFF';
@@ -81,7 +80,7 @@ function renderSvg(iconProps: IconProps) {
 }
 
 export const Icon = stagedComponent((props: IconProps) => {
-  const theme = useTheme();
+  const theme = useFluentTheme();
 
   return (rest: IconProps) => {
     // color is being set here

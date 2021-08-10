@@ -1,8 +1,39 @@
 # Change Log - @uifabricshared/theming-ramp
 
-This log was last generated on Fri, 23 Jul 2021 17:28:27 GMT and should not be manually modified.
+This log was last generated on Wed, 04 Aug 2021 06:26:25 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.15.0
+
+Wed, 04 Aug 2021 06:26:25 GMT
+
+### Minor changes
+
+- radio group on macOS (67026167+chiuam@users.noreply.github.com)
+
+### Patches
+
+- Bump @fluentui-react-native/immutable-merge to v1.1.3 (67026167+chiuam@users.noreply.github.com)
+- Bump @uifabricshared/foundation-settings to v0.10.0 (67026167+chiuam@users.noreply.github.com)
+- Bump @fluentui-react-native/theme-types to v0.9.3 (67026167+chiuam@users.noreply.github.com)
+- Bump @fluentui-react-native/test-tools to v0.1.1 (67026167+chiuam@users.noreply.github.com)
+
+## 0.14.9
+
+Tue, 27 Jul 2021 22:17:20 GMT
+
+### Patches
+
+- add compressible utility and a snapshot test / demo to framework (jasonmo@microsoft.com)
+
+## 0.14.8
+
+Mon, 26 Jul 2021 20:41:04 GMT
+
+### Patches
+
+- add new use-slot package, move framework to consume that package (jasonmo@microsoft.com)
 
 ## 0.14.6
 

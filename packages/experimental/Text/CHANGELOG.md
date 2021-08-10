@@ -1,8 +1,118 @@
 # Change Log - @fluentui-react-native/experimental-text
 
-This log was last generated on Sun, 25 Jul 2021 16:30:17 GMT and should not be manually modified.
+This log was last generated on Mon, 09 Aug 2021 22:49:01 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.6.7
+
+Mon, 09 Aug 2021 22:49:01 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/framework to v0.5.26 (ruaraki@microsoft.com)
+
+## 0.6.6
+
+Mon, 09 Aug 2021 19:16:08 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/framework to v0.5.25 (ruaraki@microsoft.com)
+
+## 0.6.5
+
+Sat, 07 Aug 2021 02:50:29 GMT
+
+### Patches
+
+- Merge branch 'master' of https://github.com/microsoft/fluentui-react-native into win32Shimmer (patboyd@microsoft.com)
+
+## 0.6.4
+
+Sat, 07 Aug 2021 00:40:04 GMT
+
+### Patches
+
+- enable usePressableState with stock Pressable component (jasonmo@microsoft.com)
+
+## 0.6.3
+
+Fri, 06 Aug 2021 23:18:21 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/framework to v0.5.23 (ruaraki@microsoft.com)
+
+## 0.6.2
+
+Fri, 06 Aug 2021 00:36:02 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/framework to v0.5.22 (ruaraki@microsoft.com)
+
+## 0.6.1
+
+Wed, 04 Aug 2021 16:54:20 GMT
+
+### Patches
+
+- move experimental Text to be written as compressible (jasonmo@microsoft.com)
+
+## 0.6.0
+
+Wed, 04 Aug 2021 06:26:25 GMT
+
+### Minor changes
+
+- radio group on macOS (67026167+chiuam@users.noreply.github.com)
+
+### Patches
+
+- Bump @fluentui-react-native/adapters to v0.6.8 (67026167+chiuam@users.noreply.github.com)
+- Bump @fluentui-react-native/framework to v0.5.20 (67026167+chiuam@users.noreply.github.com)
+- Bump @fluentui-react-native/test-tools to v0.1.1 (67026167+chiuam@users.noreply.github.com)
+
+## 0.5.17
+
+Tue, 03 Aug 2021 23:48:50 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/framework to v0.5.19 (jasonmo@microsoft.com)
+
+## 0.5.16
+
+Tue, 03 Aug 2021 22:33:17 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/framework to v0.5.18 (jasonmo@microsoft.com)
+
+## 0.5.15
+
+Thu, 29 Jul 2021 17:53:12 GMT
+
+### Patches
+
+- Bump @fluentui-react-native/framework to v0.5.17 (jasonmo@microsoft.com)
+
+## 0.5.14
+
+Tue, 27 Jul 2021 22:17:20 GMT
+
+### Patches
+
+- add compressible utility and a snapshot test / demo to framework (jasonmo@microsoft.com)
+
+## 0.5.13
+
+Mon, 26 Jul 2021 20:41:04 GMT
+
+### Patches
+
+- add new use-slot package, move framework to consume that package (jasonmo@microsoft.com)
 
 ## 0.5.12
 
