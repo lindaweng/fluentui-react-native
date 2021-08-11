@@ -12,6 +12,16 @@ export const stylingSettings: UseStylingOptions<CompoundButtonProps, CompoundBut
       secondaryContentFont: {
         variant: 'secondaryStandard',
       },
+      secondaryContentColor: t.colors.buttonContent,
+      hovered: {
+        secondaryContentColor: t.colors.buttonHoveredSecondaryContent,
+      } as ButtonTokens,
+      focused: {
+        secondaryContentColor: t.colors.buttonFocusedContent,
+      } as ButtonTokens,
+      pressed: {
+        secondaryContentColor: t.colors.buttonPressedSecondaryContent,
+      } as ButtonTokens,
       ghost: {
         secondaryContentColor: t.colors.ghostSecondaryContent,
         hovered: {
@@ -22,6 +32,18 @@ export const stylingSettings: UseStylingOptions<CompoundButtonProps, CompoundBut
         },
         pressed: {
           secondaryContentColor: t.colors.ghostPressedSecondaryContent,
+        },
+      } as ButtonTokens,
+      primary: {
+        secondaryContentColor: t.colors.brandSecondaryContent,
+        hovered: {
+          secondaryContentColor: t.colors.brandHoveredSecondaryContent,
+        },
+        focused: {
+          secondaryContentColor: t.colors.brandFocusedSecondaryContent,
+        },
+        pressed: {
+          secondaryContentColor: t.colors.brandPressedSecondaryContent,
         },
       } as ButtonTokens,
     }),
